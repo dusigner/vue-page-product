@@ -1,5 +1,21 @@
 # vue-page-product
 
+Project developed for the purpose of study.
+
+Created an example product page for ecommerce, searching the data through a Web API
+
+Created with Vue 3
+
+For Vue 3, you should use Vue CLI v4.5 available on npm as @vue/cli. To upgrade, you need to reinstall the latest version of @vue/cli globally:
+
+```
+yarn global add @vue/cli
+# OR
+npm install -g @vue/cli
+```
+
+See [Vue 3 Doc](https://v3.vuejs.org/).
+
 ## Project setup
 ```
 npm install
