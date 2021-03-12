@@ -4,10 +4,17 @@
       <MDBRow>
         <MDBCol sm="5" md="3">
           <a href="/" class="site-logo" data-tray-tst="logotipo_loja">
-            <img src="https://images.tcdn.com.br/img/img_prod/465211/1591624508_yart.png" alt="themeshoes">
+            <img
+              src="https://images.tcdn.com.br/img/img_prod/465211/1591624508_yart.png"
+              alt="themeshoes"
+            />
           </a>
         </MDBCol>
-        <MDBCol sm="5" md="6" class="offset-sm-2 offset-md-0 d-flex align-items-center ">
+        <MDBCol
+          sm="5"
+          md="6"
+          class="offset-sm-2 offset-md-0 d-flex align-items-center"
+        >
           <form class="d-flex input-group w-100">
             <input
               type="search"
@@ -20,22 +27,22 @@
             </MDBBtn>
           </form>
         </MDBCol>
-        <MDBCol sm="5" md="3" class="offset-sm-2 offset-md-0 d-flex align-items-center  ">
-
-          <MDBNavbarNav class="d-flex flex-row align-items-center justify-content-evenly w-100">
-
+        <MDBCol
+          sm="5"
+          md="3"
+          class="offset-sm-2 offset-md-0 d-flex align-items-center"
+        >
+          <MDBNavbarNav
+            class="d-flex flex-row align-items-center justify-content-evenly w-100"
+          >
             <MDBNavbarItem to="#" class="me-3 me-lg-0">
               <MDBIcon icon="shopping-cart"></MDBIcon>
             </MDBNavbarItem>
-
             <MDBNavbarItem href="#" class="me-3 me-lg-0">
               <MDBIcon iconStyle="fab" icon="twitter"></MDBIcon>
             </MDBNavbarItem>
-
             <MDBNavbarItem class="me-3 me-lg-0 dropdown">
-
               <MDBDropdown v-model="dropdown3">
-
                 <MDBDropdownToggle
                   tag="a"
                   class="nav-link"
@@ -43,16 +50,16 @@
                 >
                   <MDBIcon icon="user" />
                 </MDBDropdownToggle>
-
                 <MDBDropdownMenu>
                   <MDBDropdownItem href="#">Action</MDBDropdownItem>
                   <MDBDropdownItem href="#">Another Action</MDBDropdownItem>
-                  <MDBDropdownItem href="#" >Something else here</MDBDropdownItem>
+                  <MDBDropdownItem href="#">
+                    Something else here
+                  </MDBDropdownItem>
                 </MDBDropdownMenu>
-
-                </MDBDropdown>
+              </MDBDropdown>
             </MDBNavbarItem>
-        </MDBNavbarNav>
+          </MDBNavbarNav>
         </MDBCol>
       </MDBRow>
     </MDBContainer>
@@ -64,26 +71,35 @@ header {
 }
 </style>
 <script>
-import { ref } from 'vue';
-  import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBNavbarNav, MDBIcon, MDBDropdown, MDBDropdownMenu } from 'mdb-vue-ui-kit';
+import { ref } from "vue";
+import {
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBBtn,
+  MDBNavbarNav,
+  MDBIcon,
+  MDBDropdown,
+  MDBDropdownMenu
+} from "mdb-vue-ui-kit";
 
-  export default {
-    components: {
-      MDBContainer, 
-      MDBBtn,
-      MDBCol,
-      MDBRow,
-      MDBNavbarNav, 
-      MDBIcon, 
-      MDBDropdown,
-      MDBDropdownMenu
-    },
-    setup() {
-      const dropdown3 = ref(false);
+export default {
+  components: {
+    MDBContainer,
+    MDBBtn,
+    MDBCol,
+    MDBRow,
+    MDBNavbarNav,
+    MDBIcon,
+    MDBDropdown,
+    MDBDropdownMenu
+  },
+  setup() {
+    const dropdown3 = ref(false);
 
-      return {
-        dropdown3
-      }
-    }
-  };
+    return {
+      dropdown3
+    };
+  }
+};
 </script>
